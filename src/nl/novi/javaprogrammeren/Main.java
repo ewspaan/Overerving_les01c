@@ -35,5 +35,9 @@ public class Main {
         enoughFuel.fly(21);
         System.out.println(enoughFuel.toString());
 
+        FalconRocket enoughNormalFuel = new FalconRocket(10);
+        enoughNormalFuel.fly(9);
+        System.out.println(enoughNormalFuel.toString());
+
     }
 }
