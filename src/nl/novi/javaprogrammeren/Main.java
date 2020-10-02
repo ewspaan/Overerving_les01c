@@ -1,5 +1,6 @@
 package nl.novi.javaprogrammeren;
 
+import nl.novi.javaprogrammeren.overerving.FalconRocket;
 import nl.novi.javaprogrammeren.overerving.Rocket;
 
 public class Main {
@@ -25,5 +26,14 @@ public class Main {
 
         genericRocket.fly(10);
         System.out.println(genericRocket.toString());
+
+        FalconRocket notEnoughFuel = new FalconRocket(12);
+        notEnoughFuel.fly(23);
+        System.out.println(notEnoughFuel.toString());
+
+        FalconRocket enoughFuel = new FalconRocket(12);
+        enoughFuel.fly(21);
+        System.out.println(enoughFuel.toString());
+
     }
 }
